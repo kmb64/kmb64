@@ -5,16 +5,22 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 // endbower
 
 html {
-
-}
-
-body {
   padding-top: 50px;
-  background: url(images/bg.jpg) no-repeat center center fixed;
+  background: url(images/bg.jpg) no-repeat;
+  background-position:center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  //min-height:100%;
+  //min-width: 100%;
+  //width: 100%;
+  height: 100%;
+}
+
+body {
+  background: 0;
+
 }
 
 .bg-blanket {
@@ -33,4 +39,13 @@ body {
 .starter-template {
   padding: 40px 15px;
   text-align: center;
+}
+.navbar {
+  //-webkit-border-image: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)) 21 30 30 21 repeat repeat;
+  border-image: linear-gradient(to right, rgba(153, 93, 179, 0.6) 1%, rgba(44, 155, 219, 0.6));
+  border-bottom: 10px soild;
+}
+
+.navbar-brand {
+  height: 0;
 }
